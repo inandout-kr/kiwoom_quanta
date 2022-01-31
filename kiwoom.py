@@ -1,4 +1,3 @@
-from re import A
 from pykiwoom.kiwoom import *
 import time
 from datetime import datetime
@@ -46,7 +45,7 @@ today = now.strftime("%Y%m%d")
 
 # 전 종목의 일봉 데이터
 for i, code in enumerate(codes):
-    print(f"{i}/{len(codes[1320:])} {code[1320:]}")
+    print(f"{i}/{len(codes[3000:])} {code[3000:]}")
     df = kiwoom.block_request("opt10081",
                               종목코드=code,
                               기준일자=today,
